@@ -15,7 +15,7 @@ using Volo.Abp.FeatureManagement;
 
 namespace Acme.BookStore.Books
 {
-    [Authorize(BookStorePermissions.Books.Default)]
+   [Authorize(BookStorePermissions.Books.Default)]
     public class BookAppService :
         CrudAppService<
             Book, //The Book entity
