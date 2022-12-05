@@ -38,9 +38,12 @@ using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.UI;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.VirtualFileSystem;
-using Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite;
-using Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite.Bundling;
+//using Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite;
+//using Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite.Bundling;
 using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
+using Lsw.Abp.AspNetCore.Mvc.UI.Theme.Stisla.Bundling;
+//using Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite;
+using Lsw.Abp.AspNetCore.Mvc.UI.Theme.Stisla;
 
 namespace Acme.BookStore.Web
 {
@@ -57,7 +60,10 @@ namespace Acme.BookStore.Web
 //typeof(AbpAspNetCoreMvcUiBasicThemeModule),
 
 // Add the LeptonX Lite module to DependsOn attribute
-typeof(AbpAspNetCoreMvcUiLeptonXLiteThemeModule), typeof(AbpAspNetCoreAuthenticationJwtBearerModule),
+//typeof(AbpAspNetCoreMvcUiLeptonXLiteThemeModule),
+
+typeof(AbpAspNetCoreMvcUiStislaThemeModule),
+        typeof(AbpAspNetCoreAuthenticationJwtBearerModule),
         typeof(AbpTenantManagementWebModule),
         typeof(AbpAspNetCoreSerilogModule)
         )]
@@ -114,7 +120,7 @@ typeof(AbpAspNetCoreMvcUiLeptonXLiteThemeModule), typeof(AbpAspNetCoreAuthentica
             {
                 options.StyleBundles.Configure(
                   // LeptonXLiteThemeBundles.Styles.Global,
-                  LeptonXLiteThemeBundles.Styles.Global,
+                  StislaThemeBundles.Styles.Global,
   bundle =>
                     {
                         bundle.AddFiles("/global-styles.css");

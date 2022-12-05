@@ -23,6 +23,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Toolbars\StislaThemeMainTopToolbarContributor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Themes\Stisla\Components\Brand\Default.cshtml" />
+    <None Include="Themes\Stisla\Components\LeftNavbar\Default.cshtml" />
+    <None Include="Themes\Stisla\Components\Menu\Default.cshtml" />
+    <None Include="Themes\Stisla\Components\Menu\_MenuItem.cshtml" />
+    <None Include="Themes\Stisla\Components\PageAlerts\Default.cshtml" />
+    <None Include="Themes\Stisla\Components\Toolbar\Default.cshtml" />
+    <None Include="Themes\Stisla\Components\Toolbar\LanguageSwitch\Default.cshtml" />
+    <None Include="Themes\Stisla\Components\Toolbar\UserMenu\Default.cshtml" />
+    <None Include="Themes\Stisla\Components\TopNavbar\Default.cshtml" />
+    <None Include="Themes\Stisla\Layouts\Account.cshtml" />
+    <None Include="Themes\Stisla\Layouts\Application.cshtml" />
+    <None Include="Themes\Stisla\Layouts\Empty.cshtml" />
+    <None Include="Themes\Stisla\_ViewImports.cshtml" />
     <None Include="wwwroot\libs\%40fortawesome\fontawesome-free\webfonts\fa-brands-400.svg" />
     <None Include="wwwroot\libs\%40fortawesome\fontawesome-free\webfonts\fa-brands-400.woff2" />
     <None Include="wwwroot\libs\%40fortawesome\fontawesome-free\webfonts\fa-regular-400.svg" />
@@ -441,6 +458,9 @@
     <PackageReference Include="Volo.Abp.Account.Web.IdentityServer" Version="6.0.0-rc.2" />
     <PackageReference Include="Volo.Abp.TenantManagement.Web" Version="6.0.0-rc.2" />
     <PackageReference Include="Volo.Abp.FeatureManagement.Web" Version="6.0.0-rc.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Toolbars\" />
   </ItemGroup>
 
 </Project>
